@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="todo__section border mx-auto w-50 my-5 p-4">
+        <div class="conatiner">
+            <div class="row todo__section__content">
+                <div class="col-md-12 mb-3">
+                    <div class="name">
+                        <input class="form-control" type="text" name="" id="inputName" placeholder="Enter Your Name">
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="taskTitle">
+                        <input class="form-control" type="text" name="" id="inputTask" placeholder="Enter Your Task">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="taskBtn">
+                        <button class="btn btn-primary form-control" id="btnAdd">ADD</button>
+                    </div>
+                    <div class="updateBtn mt-2">
+                        <button class="btn btn-warning form-control text-light d-none" id="btnUpdate">UPDATE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+                <div class="col-md-12">
+                    <input type="search" name="" id="searchTask" class="form-control" placeholder="Search">
+                </div>            
+        </div>
+    </div>
+
+
+    <div class="table__tasks mt-4">
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Task Title</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="displays__data">
+                  
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./JS/app.js"></script>
+</body>
+</html>
